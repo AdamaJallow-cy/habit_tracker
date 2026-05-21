@@ -12,7 +12,7 @@ The system is organized into separate classes for managing habits, handling anal
 - Support for daily and weekly habits periods
 - Persistent data storage using JSON
 - Predefined habits with 4 weeks of sample data
-- Command line interface for user interaction 
+- Command line interface(CLI) for user interaction 
 - Unit testing implemented with pytest
 
 ## Project Structure
@@ -51,7 +51,7 @@ pip install pytest
 2. Clone the repository: Open Git and execute the    following command:
 
 ```bash
-git clone https://github.com/AdamaJallow/habit_tracker.git
+git clone https://github.com/AdamaJallow-cy/habit_tracker.git
 ```
 
 3. Navigate into the project folder:
