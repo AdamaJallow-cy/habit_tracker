@@ -51,7 +51,7 @@ pip install pytest
 2. Clone the repository: Open Git and execute the    following command:
 
 ```bash
-git clone https://github.com/AdamaJallow-cy/habit_tracker.git
+git clone https://github.com/AdamaJallow-cy/habit_tracker
 ```
 
 3. Navigate into the project folder:
@@ -110,3 +110,9 @@ python preload_data.py
 | Sunday Chores | Weekly |
 
 
+## Author
+
+**Adama Jallow**  
+IU International University  
+Object-Oriented and Functional Programming with Python (DLBDSOOFPP01)  
+GitHub: https://github.com/AdamaJallow-cy/habit_tracker
