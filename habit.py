@@ -8,6 +8,8 @@ class Habit:
         self.completions = []
 
     def mark_complete(self):
+        """This marks a habit as complete for a particular period (daily/weekly)
+         by recording the current date in the completions list."""
         today = datetime.now().strftime("%Y-%m-%d")
         if today not in self.completions:
             self.completions.append(today)
@@ -16,6 +18,8 @@ class Habit:
             print(f"Habit '{self.name}' already done")
 
     def get_streak(self):
+        """ Calculates and returns the current streak
+        based on consecutive completion dates """
         if not self.completions:
             return 0
         streak = 1
@@ -33,6 +37,8 @@ class Habit:
         return streak
 
     def get_status(self):
+        """This returns a dictionary containing habit's name, periodicity,
+        creation date, completions and current streak"""
         status = {
             "name": self.name,
             "periodicity": self.periodicity,
@@ -42,10 +48,13 @@ class Habit:
         }
         return status
     def __str__(self):
+        """Makes habit display much more readable"""
         return (f"Habit: {self.name} | "
                 f"Periodicity: {self.periodicity} | "
                 f"Streak: {self.get_streak()} days")
     def __repr__(self):
+        """Returns a technical string showing the habit's name and
+        periodicity, useful for debugging purposes."""
         return (f"Habit(name='{self.name}', "
                 f"periodicity='{self.periodicity}')")
         
