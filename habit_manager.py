@@ -37,7 +37,7 @@ class HabitManager:
     ]
 }
         with open(self.file_path, "w") as f:
-            json.dump(data, f)
+            json.dump(data, f, indent=4)
  
     def load_habits(self):
         """Reads JSON file, converts back to Habit objects"""
